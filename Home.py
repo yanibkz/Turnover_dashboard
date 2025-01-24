@@ -44,7 +44,7 @@ st.markdown(
 # Titre principal avec style
 st.markdown("""
     <div class="header">
-        <h1>Bienvenue sur le Dashboard de Prédiction de Turnover des Employés</h1>
+        <h1>Bienvenue sur le Dashboard: Turnover des Employés</h1>
     </div>
     """, unsafe_allow_html=True)
 
