@@ -76,7 +76,7 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-# Section des Critères d'un Bon Dashboard
+# Section des Critères d'Accessibilité d'un Bon Dashboard
 st.markdown("""
     <div class="section">
         <h2>Critères d'un Bon Dashboard</h2>
