@@ -11,7 +11,6 @@ Ce dashboard interactif a été conçu pour les responsables RH afin de prédire
 - Visualisation des Détails de l'Employé
 - Explications SHAP
 - Graphiques de Dispersion des Features
-- Téléchargement des Scores en CSV
 - Recommandations pour Améliorer le Turnover
 
 ## Installation
