@@ -61,17 +61,17 @@ st.markdown("""
         </p>
         <h3>Fonctionnalités principales</h3>
         <ul>
+            <li><strong>Dashboard KPI</strong> : Accède aux indicateurs clés de performance et visualisations interactives, incluant des métriques telles que le taux de turnover global, la satisfaction moyenne des employés, les heures mensuelles moyennes, ainsi que des visualisations détaillées comme des histogrammes, graphiques en barres, graphiques en secteurs, et des scatter plots dynamiques pour une analyse approfondie du turnover.</li>
             <li><strong>Prédiction de Turnover</strong> : Affiche la probabilité qu'un employé quitte l'entreprise.</li>
             <li><strong>Visualisation des Détails</strong> : Permet de visualiser les caractéristiques spécifiques de l'employé sélectionné.</li>
             <li><strong>Explications SHAP</strong> : Fournit des explications détaillées sur l'impact des différentes caractéristiques (features) sur la prédiction.</li>
-            <li><strong>Graphiques de Dispersion</strong> : Visualise la distribution des caractéristiques sélectionnées avec indication des valeurs de l'employé.</li>
-            <li><strong>Téléchargement des Scores</strong> : Permet de télécharger les résultats de la prédiction au format CSV.</li>
             <li><strong>Recommandations</strong> : Affiche des recommandations pour améliorer la rétention des employés.</li>
         </ul>
         <h3>Objectifs du Dashboard</h3>
         <p>
             Ce dashboard vise à fournir une interface utilisateur claire et accessible pour les responsables RH et les analystes de données, 
-            facilitant ainsi la prise de décisions informées pour réduire le taux de turnover au sein de l'entreprise.
+            facilitant ainsi la prise de décisions informées pour réduire le taux de turnover au sein de l'entreprise. 
+            Vous pouvez naviguer vers le Dashboard KPI en utilisant la barre latérale de Streamlit, où vous trouverez des visualisations détaillées et des indicateurs essentiels.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -110,51 +110,51 @@ if st.button("📊 Afficher les Recommandations et Résultats"):
     st.subheader("📈 Recommandations et Résultats")
 
     st.markdown("""
-    ### 👤 Profil des Collaborateurs qui Quittent l'Entreprise :
-
+    ### 👤 Profil des Collaborateurs qui Quitte l'Entreprise :
+    
     - **Satisfaction Faible** :
       Les employés ayant un niveau de satisfaction faible sont plus susceptibles de quitter l'entreprise.
-
+    
     - **Charge de Travail Déséquilibrée** :
       - **Surcharge** : Heures travaillées > 220.
       - **Sous-utilisation** : Heures travaillées < 150.
-
+    
     - **Salaire Bas** :
       Les employés dans les catégories de salaire bas sont majoritairement touchés par le turnover.
-
+    
     - **Postes à Risque** :
       Les départements **Ressources Humaines (HR)** et **Accounting** présentent un taux de turnover plus élevé.
-
+    
     - **Facteurs Spécifiques** :
       Les employés insatisfaits sont plus aptes à quitter l'entreprise.
-
+    
     ### ❓ Pourquoi les Collaborateurs Quittent-ils ?
-
+    
     - **Insatisfaction au Travail** :
       - Faible reconnaissance.
       - Mauvaises conditions de travail.
-
+    
     - **Charge de Travail** :
       - **Surmenage (Burnout)** : Trop d'heures de travail.
       - **Sous-engagement (Désintérêt)** : Trop peu d'heures de travail.
-
+    
     - **Rémunération Insuffisante** :
       - Salaire bas perçu comme non compétitif par rapport au marché.
-
+    
     ### 💡 Comment Améliorer le Turnover
-
+    
     - **Améliorer la Satisfaction** :
       - Équilibrer les charges de travail.
       - Mieux reconnaître et récompenser les efforts des employés.
-
+    
     - **Offrir des Promotions Régulières** :
       - Clarifier les plans de carrière.
       - Fournir des opportunités de développement professionnel.
-
+    
     - **Augmenter la Rémunération** :
       - Aligner les salaires sur le marché.
       - Introduire des primes de performance.
-
+    
     - **Cibler les Postes Critiques** :
       - Offrir des formations spécifiques.
       - Fournir un soutien supplémentaire pour les départements Accounting et RH.
