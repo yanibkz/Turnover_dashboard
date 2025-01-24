@@ -229,6 +229,28 @@ with row2_col2:
     else:
         st.write("Aucune donnée.")
 
+# Taux de turnover par poste (%)
+st.subheader("Taux de turnover par poste (%)")
+if not df.empty:
+    df["left_percentage"] = df["left"] * 100  # Calcul du pourcentage
+    turnover_by_job = df.groupby("job")["left_percentage"].mean().reset_index()
+
+    fig_turnover_by_job = px.bar(
+        turnover_by_job,
+        x="job",
+        y="left_percentage",
+        title="Taux de turnover par poste (%)",
+        labels={"left_percentage": "Taux de turnover (%)", "job": "Poste"},
+        text_auto=".2f"  # Affiche les pourcentages avec 2 décimales
+    )
+    st.plotly_chart(fig_turnover_by_job, use_container_width=True)
+else:
+    st.write("Aucune donnée disponible pour ce filtre.")
+
+
+
+
+
 # ----------------------------
 # Scatter Plot Dynamique (fin de page)
 # ----------------------------
